@@ -1,39 +1,28 @@
-# Foundry template
+# Ethernaut Solutions
 
-This is a template for a Foundry project.
+Using the following link https://ethernaut.openzeppelin.com/
 
-## Installation
-
-To install with [DappTools](https://github.com/dapphub/dapptools):
+## 0. Hello Ethernaut
 
 ```
-dapp install [user]/[repo]
+await contract.password()
+// Get the above result and substitute with $password$ below
+await contract.authenticate('$password$')
 ```
 
-To install with [Foundry](https://github.com/gakonst/foundry):
+## 1. Fallback
 
 ```
-forge install [user]/[repo]
+await contract.contribute({value: 500});
+await contract.send({value: 500});
+await contract.withdraw();
 ```
 
-## Local development
-
-This project uses [Foundry](https://github.com/gakonst/foundry) as the development framework.
-
-### Dependencies
+## 2. Fallout
 
 ```
-make update
+await contract.Fal1out({value: 500});
 ```
 
-### Compilation
+## 3. Coin Flip
 
-```
-make build
-```
-
-### Testing
-
-```
-make test
-```
