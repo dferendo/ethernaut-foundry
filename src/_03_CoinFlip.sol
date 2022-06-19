@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.11;
+pragma solidity ^0.8.10;
 
 interface CoinFlip {
   function flip(bool _guess) external returns (bool);
