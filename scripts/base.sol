@@ -20,22 +20,22 @@ interface ILevel {
 }
 
 abstract contract Ethernaut is Test {
-  IEthernaut constant ethernaut = IEthernaut(0xD991431D8b033ddCb84dAD257f4821E9d5b38C33);
+    IEthernaut constant ethernaut = IEthernaut(0xD991431D8b033ddCb84dAD257f4821E9d5b38C33);
 
   // Levels addresses
-  address constant HELLO_ETHERNAUT = address(0x4E73b858fD5D7A5fc1c3455061dE52a53F35d966);
+    address constant HELLO_ETHERNAUT = address(0x4E73b858fD5D7A5fc1c3455061dE52a53F35d966);
 
-  function createNewInstance(address level)
-      internal
-      returns (address)
+    function createNewInstance(address level)
+        internal
+        returns (address)
     {
-      vm.recordLogs();
+        vm.recordLogs();
       // Create normal instance
-      ethernaut.createLevelInstance(level);
+        ethernaut.createLevelInstance(level);
 
-      // Get instance address from logs
-      Vm.Log[] memory entries = vm.getRecordedLogs();
-      return abi.decode(entries[0].data, (address));
+        // Get instance address from logs
+        Vm.Log[] memory entries = vm.getRecordedLogs();
+        return abi.decode(entries[0].data, (address));
     }
 
     function submitInstance(address level, address instance) internal {
