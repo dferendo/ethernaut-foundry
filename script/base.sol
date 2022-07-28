@@ -4,8 +4,19 @@ pragma solidity ^0.8.12;
 import 'forge-std/Test.sol';
 
 interface IEthernaut {
-  function createLevelInstance(address _level) external payable;
-  function submitLevelInstance(address payable _instance) external;
+    function createLevelInstance(address _level) 
+        external 
+        payable;
+      
+    function submitLevelInstance(address payable _instance) 
+        external;
+}
+
+interface ILevel {
+    function validateInstance(address payable _instance, address _player)
+        external
+        view
+        returns (bool);
 }
 
 abstract contract Ethernaut is Test {
@@ -15,8 +26,8 @@ abstract contract Ethernaut is Test {
   address constant HELLO_ETHERNAUT = address(0x4E73b858fD5D7A5fc1c3455061dE52a53F35d966);
 
   function createNewInstance(address level)
-        internal
-        returns (address)
+      internal
+      returns (address)
     {
       vm.recordLogs();
       // Create normal instance
@@ -25,5 +36,13 @@ abstract contract Ethernaut is Test {
       // Get instance address from logs
       Vm.Log[] memory entries = vm.getRecordedLogs();
       return abi.decode(entries[0].data, (address));
+    }
+
+    function submitInstance(address level, address instance) internal {
+        require(
+            ILevel(level).validateInstance(payable(instance), msg.sender),
+            "Invalid-Submission"
+        );
+        ethernaut.submitLevelInstance(payable(instance));
     }
 }
