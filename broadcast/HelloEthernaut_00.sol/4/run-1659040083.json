@@ -1,0 +1,40 @@
+{
+  "transactions": [
+    {
+      "hash": null,
+      "type": "CALL",
+      "contractAddress": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+      "tx": {
+        "type": "0x02",
+        "from": "0x00a329c0648769a73afac7f9381e08fb43dbea72",
+        "to": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+        "gas": "0xfc2bc",
+        "value": "0x0",
+        "data": "0xdfc86b170000000000000000000000004e73b858fd5d7a5fc1c3455061de52a53f35d966",
+        "nonce": "0x145",
+        "accessList": []
+      }
+    },
+    {
+      "hash": null,
+      "type": "CALL",
+      "contractAddress": "0x13eb6ea137789720cf5c1f5ec31163e0f9cb5f46",
+      "tx": {
+        "type": "0x02",
+        "from": "0x00a329c0648769a73afac7f9381e08fb43dbea72",
+        "to": "0x13eb6ea137789720cf5c1f5ec31163e0f9cb5f46",
+        "gas": "0x7af8",
+        "value": "0x0",
+        "data": "0x224b610b",
+        "nonce": "0x146",
+        "accessList": []
+      }
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [],
+  "path": "broadcast/HelloEthernaut_00.sol/4/run-latest.json",
+  "returns": {},
+  "timestamp": 1659040083
+}

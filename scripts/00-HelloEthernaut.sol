@@ -6,7 +6,7 @@ import 'forge-std/Test.sol';
 
 interface IHelloEthernaut {
   function authenticate(string memory passkey) external;
-  function password() external returns (string memory);
+  function password() external view returns (string memory);
 }
 
 contract HelloEthernaut is Ethernaut {
