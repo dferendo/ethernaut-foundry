@@ -26,6 +26,7 @@ abstract contract Ethernaut is Test {
     address constant HELLO_ETHERNAUT = address(0x4E73b858fD5D7A5fc1c3455061dE52a53F35d966);
     address constant FALLBACK = address(0x9CB391dbcD447E645D6Cb55dE6ca23164130D008);
     address constant FALLOUT = address(0x5732B2F88cbd19B6f01E3a96e9f0D90B917281E5);
+    address constant COIN_FLIP = address(0x4dF32584890A0026e56f7535d0f2C6486753624f);
 
     function createNewInstance(address level)
         internal
