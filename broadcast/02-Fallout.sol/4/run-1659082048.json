@@ -1,0 +1,55 @@
+{
+  "transactions": [
+    {
+      "hash": null,
+      "type": "CALL",
+      "contractAddress": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+      "tx": {
+        "type": "0x02",
+        "from": "0xf42581bb0870db1e3190cf59932e03d9ed44c7a2",
+        "to": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+        "gas": "0x80af8",
+        "value": "0x0",
+        "data": "0xdfc86b170000000000000000000000005732b2f88cbd19b6f01e3a96e9f0d90b917281e5",
+        "nonce": "0xc",
+        "accessList": []
+      }
+    },
+    {
+      "hash": null,
+      "type": "CALL",
+      "contractAddress": "0x52bd9f06e60060ad98e4f552de473e3b0a049e56",
+      "tx": {
+        "type": "0x02",
+        "from": "0xf42581bb0870db1e3190cf59932e03d9ed44c7a2",
+        "to": "0x52bd9f06e60060ad98e4f552de473e3b0a049e56",
+        "gas": "0x14d77",
+        "value": "0xe8d4a51000",
+        "data": "0x6fab5ddf",
+        "nonce": "0xd",
+        "accessList": []
+      }
+    },
+    {
+      "hash": null,
+      "type": "CALL",
+      "contractAddress": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+      "tx": {
+        "type": "0x02",
+        "from": "0xf42581bb0870db1e3190cf59932e03d9ed44c7a2",
+        "to": "0xd991431d8b033ddcb84dad257f4821e9d5b38c33",
+        "gas": "0xc7c3",
+        "value": "0x0",
+        "data": "0xc882d7c200000000000000000000000052bd9f06e60060ad98e4f552de473e3b0a049e56",
+        "nonce": "0xe",
+        "accessList": []
+      }
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [],
+  "path": "broadcast/02-Fallout.sol/4/run-latest.json",
+  "returns": {},
+  "timestamp": 1659082048
+}
