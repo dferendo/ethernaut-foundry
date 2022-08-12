@@ -33,7 +33,7 @@ abstract contract Ethernaut is Test {
         returns (address)
     {
         vm.recordLogs();
-      // Create normal instance
+        // Create normal instance
         ethernaut.createLevelInstance(level);
 
         // Get instance address from logs
